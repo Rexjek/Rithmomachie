@@ -41,7 +41,7 @@ public class RandAuswahl : MonoBehaviour {
         }
     }
 
-    public void VersteckteAuswahl()                             //
+    public void VersteckteAuswahl()                             //Setzt das durch versteckte Kachel aktiv gesetzte Objekt wieder inaktiv
     {
 
         foreach (GameObject go in Auswahl)

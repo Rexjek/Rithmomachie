@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=MyWorld
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=MyWorld()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MyWorld.\r\n\ \r\n
+comment2.params=Kreis\ x\ y
+comment2.target=void\ addStone(greenfoot.Actor,\ int,\ int)
+comment3.params=W\ x
+comment3.target=int\ updateX(int,\ int)
+comment4.params=W\ y
+comment4.target=int\ updateY(int,\ int)
+comment5.params=x\ y\ Wert\ s2\ s3\ s4\ s5\ s6
+comment5.target=void\ LegePfad(int,\ int,\ int,\ int,\ int,\ int,\ int,\ int)
+numComments=6

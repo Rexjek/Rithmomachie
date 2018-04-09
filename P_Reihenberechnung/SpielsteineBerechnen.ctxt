@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=SpielsteineBerechnen
+comment1.params=
+comment1.target=SpielsteineBerechnen()
+comment2.params=
+comment2.target=void\ weissBerechnen()
+comment3.params=
+comment3.target=void\ schwarzBerechnen()
+comment4.params=x
+comment4.target=double\ getW(int)
+comment5.params=x
+comment5.target=double\ getS(int)
+numComments=6

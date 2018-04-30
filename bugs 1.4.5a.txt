@@ -2,6 +2,11 @@ Bugs Rithmomachie 1.4.5a:
 
 illegale Züge (über andere Steine hinweg):
 
+generell:
+
+schwarze Vierecke
+weiße Dreiecke
+
 Schwarze Steine:
 
 0 14 - Viereck 	4 links 
@@ -65,13 +70,12 @@ Weiße Steine:
 weiße Kreise: wenn weiter nach links bewegt als START-Position -> IndexOutOfRangeException
 weiße Dreiecke: nicht nach ganz links bewegbar
 weißes Viereck: wenn weiter nach links bewegt als START-Position -> IndexOutOfRangeException
-2 15 kann nicht mehr nach Links laufen sobald er ganz Rechts angekommen ist
 
 Schwarze Steine: 
 
 schwarze Dreiecke können nicht nach ganz links laufen (z.B 5 1)
-schwarze Rechtecke können nicht ganz nach links laufen wenn sie davor in der vorletzten linken Reihe waren
-schwarzer Kreis kann sich überhaupt nicht mehr bewegen sobald er ganz links angekommen ist
+schwarze Rechtecke können nicht mehr bewegen, wenn sie in 2 oder 3 Reihe von links stehen
+schwarzer Kreis kann sich überhaupt nicht mehr bewegen sobald er ganz links angekommen ist -> IndexOutOfRangeException
 
 
 

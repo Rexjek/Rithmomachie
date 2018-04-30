@@ -4,7 +4,7 @@ illegale Züge (über andere Steine hinweg):
 
 generell:
 
-schwarze Vierecke
+schwarze Vierecke?
 weiße Dreiecke
 
 Schwarze Steine:

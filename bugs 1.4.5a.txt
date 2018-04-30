@@ -5,11 +5,13 @@ illegale Züge (über andere Steine hinweg):
 ------------------------------------------
 
 generell:
+---------
 
 schwarze Vierecke - ziehen über andere Steine
 weiße Dreiecke - ziehen über andere Steine
 
 Schwarze Steine:
+----------------
 
 0 14 - Viereck 	4 links 
 				1 rechts, 3 runter
@@ -38,6 +40,7 @@ Schwarze Steine:
 
 				
 Weiße Steine:
+-------------
 
 0 0 - Viereck	4 runter
 				3 rechts, 1 runter

@@ -5,7 +5,7 @@ illegale Züge (über andere Steine hinweg):
 generell:
 
 schwarze Vierecke - ziehen über andere Steine
-weiße Dreiecke?
+weiße Dreiecke - ziehen über andere Steine
 
 Schwarze Steine:
 

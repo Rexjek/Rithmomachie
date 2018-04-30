@@ -75,7 +75,8 @@ Weiße Steine:
 weiße Kreise: wenn weiter nach links bewegt als START-Position -> IndexOutOfRangeException
 weiße Dreiecke: nicht nach ganz links bewegbar
 weißes Viereck: wenn weiter nach links bewegt als START-Position -> IndexOutOfRangeException
-weiße Kreise: 1 und 2 Reihe von recht keine Bewegung nach Links mehr möglich
+weiße Kreise: 1 und 2 Reihe von recht keine Bewegung nach Links mehr möglich,
+obere rechte Ecke auch keine Züge nach oben oder unten möglich
 
 Schwarze Steine: 
 

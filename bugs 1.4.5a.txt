@@ -28,6 +28,8 @@ Schwarze Steine:
 				3 links, 1 hoch
 				4 hoch
 				
+
+				
 Weiße Steine:
 
 0 0 - Viereck	4 runter
@@ -38,6 +40,7 @@ Weiße Steine:
 1 0 - Viereck	1 hoch, 3 rechts
 1 1 - Viereck	1 links, 3 runter
 				4 rechts
+				
 				3 rechts, 1 hoch
 				3 rechts, 1 runter
 2 1 - Dreieck	3 rechts
@@ -63,6 +66,11 @@ weiße Kreise: wenn weiter nach links bewegt als START-Position -> IndexOutOfRan
 weiße Dreiecke: nicht nach ganz links bewegbar
 weißes Viereck: wenn weiter nach links bewegt als START-Position -> IndexOutOfRangeException
 
+Schwarze Steine: 
+
+schwarze Dreiecke können nicht nach ganz links laufen (z.B 5 1)
+schwarze Rechtecke können nicht ganz nach links laufen
+schwarzer Kreis kann sich überhaupt nicht mehr bewegen sobald er ganz links angekommen ist
 
 
 

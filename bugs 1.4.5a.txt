@@ -84,7 +84,6 @@ schwarze Dreiecke können nicht nach ganz links laufen (z.B 5 1)
 schwarze Rechtecke können nicht mehr bewegen, wenn sie in 2 oder 3 Reihe von links stehen
 schwarzer Kreis kann sich überhaupt nicht mehr bewegen sobald er ganz links angekommen ist -> IndexOutOfRangeException
 
-
 Steine in unterer linker Ecke können sich nicht mehr beewgen, Steine in oberer linker Ecke schon
 
 

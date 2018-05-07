@@ -16,51 +16,50 @@ Schwarze Steine:
 ----------------
 
 0 14 - Viereck 	4 links 
-				1 rechts, 3 runter
+		1 rechts, 3 runter
 0 15 - Viereck	4 links
-				4 runter
+		4 runter
 1 14 - Viereck	4 links
-				3 links, 1 hoch
-				1 rechts, 3 runter
+		3 links, 1 hoch
+		1 rechts, 3 runter
 1 15 - Viereck	4 links
-				3 links, 1 hoch
+		3 links, 1 hoch
 2 13 - Kreis	1 links, 1 hoch
 2 14 - Dreieck 	2 links, 1 hoch
 5 13 - Kreis 	1 links, 1 runter
 5 14 - Viereck	4 links
-				3 links, 1 hoch
-				1 rechts, 3 hoch
+		3 links, 1 hoch
+		1 rechts, 3 hoch
 6 15 - Viereck	4 links
-				3 links, 1 runter
+		3 links, 1 runter
 7 14 - Viereck	4 links
-				3 links, 1 hoch
-				1 rechts, 3 hoch
+		3 links, 1 hoch
+		1 rechts, 3 hoch
 7 15 - Viereck	4 links
-				3 links, 1 hoch
-				4 hoch
+		3 links, 1 hoch
+		4 hoch
 				
 -------------				
 Weiße Steine:
 -------------
 
 0 0 - Viereck	4 runter
-				3 rechts, 1 runter
+		3 rechts, 1 runter
 0 1 - Viereck	1 links, 3 runter
-				4 rechts
-				3 rechts, 1 runter
+		4 rechts
+		3 rechts, 1 runter
 1 0 - Viereck	1 hoch, 3 rechts
 1 1 - Viereck	1 links, 3 runter
-				4 rechts
-				
-				3 rechts, 1 hoch
-				3 rechts, 1 runter
+		4 rechts
+		3 rechts, 1 hoch
+		3 rechts, 1 runter
 2 1 - Dreieck	3 rechts
-				2 rechts, 1 hoch
+		2 rechts, 1 hoch
 3 1 - Dreieck	3 rechts
 4 1 - Dreieck	3 rechts
 5 1 - Dreieck	3 rechts
-				2 rechts, 1 runter
-5 2 - Kreis		1 rechts, 1 runter
+		2 rechts, 1 runter
+5 2 - Kreis	1 rechts, 1 runter
 
 
 

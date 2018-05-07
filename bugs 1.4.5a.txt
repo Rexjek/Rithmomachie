@@ -26,6 +26,7 @@ Schwarze Steine:
 		3 links, 1 hoch
 2 13 - Kreis	1 links, 1 hoch
 2 14 - Dreieck 	2 links, 1 hoch
+3 13 - Kreis	1 runter, 1 links
 5 13 - Kreis 	1 links, 1 runter
 5 14 - Viereck	4 links
 		3 links, 1 hoch

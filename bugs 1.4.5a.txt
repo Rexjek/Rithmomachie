@@ -1,12 +1,12 @@
 Bugs Rithmomachie 1.4.5a:
 
-------------------------------------------
+******************************************
 illegale Züge (über andere Steine hinweg):
-------------------------------------------
+******************************************
 
-*********
+---------
 generell:
-*********
+---------
 
 schwarze Vierecke - ziehen über andere Steine
 weiße Dreiecke - ziehen über andere Steine

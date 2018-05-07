@@ -11,6 +11,7 @@ generell:
 schwarze Vierecke - ziehen über andere Steine
 weiße Dreiecke - ziehen über andere Steine
 
+----------------
 Schwarze Steine:
 ----------------
 

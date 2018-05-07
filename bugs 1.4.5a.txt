@@ -4,6 +4,7 @@ Bugs Rithmomachie 1.4.5a:
 illegale Züge (über andere Steine hinweg):
 ------------------------------------------
 
+---------
 generell:
 ---------
 

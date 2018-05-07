@@ -5,6 +5,15 @@ Bugs Rithmomachie 1.4.5a:
 ******************************************
 illegale Züge (über andere Steine hinweg):
 ******************************************
+                o    .  o  .  o .  o  .  o  .  o
+           o
+        .
+      .        ___
+     _n_n_n____i_i ________ ______________ _++++++++++++++_
+  *>(____________I I______I I____________I I______________I
+    /ooOOOO OOOOoo  oo oooo oo          oo ooo          ooo
+------------------------------------------------------------
+
 
 ---------
 generell:
@@ -119,4 +128,4 @@ Weiße Steine:
 7 1 - Viereck IndexOutOfRangeException
 
 
-404: ERROR NOT FOUND !
+404: ERROR NOT FOUND

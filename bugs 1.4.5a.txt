@@ -68,6 +68,7 @@ Weiße Steine:
 fehlender Zug:
 --------------
 
+-------------
 Weiße Steine:
 -------------
 

@@ -85,6 +85,7 @@ weißes Viereck: wenn weiter nach links bewegt als START-Position -> IndexOutOfR
 weiße Kreise: 1 und 2 Reihe von recht keine Bewegung nach Links mehr möglich,
 Reihe ganz recht auch keine Züge nach oben oder unten möglich
 
+----------------
 Schwarze Steine: 
 ----------------
 

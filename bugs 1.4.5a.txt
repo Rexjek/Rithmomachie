@@ -107,7 +107,7 @@ Steine in unterer linker Ecke können sich nicht mehr beewgen, Steine in oberer 
 Fehlermeldungen:
 ----------------
 
-
+-------------
 Weiße Steine:
 -------------
 

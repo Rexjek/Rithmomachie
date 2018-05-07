@@ -112,3 +112,6 @@ Weiße Steine:
 6 1 - Viereck IndexOutOfRangeException
 7 0 - Viereck IndexOutOfRangeException
 7 1 - Viereck IndexOutOfRangeException
+
+
+404: ERROR NOT FOUND

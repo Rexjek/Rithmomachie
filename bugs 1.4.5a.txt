@@ -69,8 +69,8 @@ fehlender Zug:
 Weiße Steine:
 -------------
 
-1 0 - Viereck 	kann ned gerade aus
-0 0 - Viereck 	kann ned gerade aus
+1 0 - Viereck 	kann nicht nach rechts ziehen
+0 0 - Viereck 	kann nicht nach rechts ziehen
 
 2 1 - Dreieck	1 links, 2 runter
 3 1 - Dreieck	1 links, 2 runter
@@ -78,7 +78,7 @@ Weiße Steine:
 5 1 - Dreieck	1 links, 2 hoch
 
 weiße Kreise: wenn weiter nach links bewegt als START-Position -> IndexOutOfRangeException
-weiße Dreiecke: nicht nach ganz links bewegbar
+weiße Dreiecke: nicht nach ganz links bewegbar, nicht immer nach links bewegbar
 weißes Viereck: wenn weiter nach links bewegt als START-Position -> IndexOutOfRangeException
 weiße Kreise: 1 und 2 Reihe von recht keine Bewegung nach Links mehr möglich,
 Reihe ganz recht auch keine Züge nach oben oder unten möglich

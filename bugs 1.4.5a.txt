@@ -10,7 +10,7 @@ illegale Züge (über andere Steine hinweg):
 generell:
 ---------
 
-schwarze Vierecke - ziehen über andere Steine
+Vierecke - ziehen über andere Steine
 weiße Dreiecke - ziehen über andere Steine
 Kreise können diagonal über andere Steine ziehen:  	 O | + 		   | + 
 							---|---	  -->	---|---	

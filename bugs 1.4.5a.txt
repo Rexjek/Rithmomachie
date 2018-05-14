@@ -12,7 +12,8 @@ generell:
 
 Vierecke - ziehen über andere Steine
 weiße Dreiecke - ziehen über andere Steine
-		 außer Zug nach unten
+		 außer Zug gerade nach unten
+		 außer Zug gerade nach links
 schwarze Dreiecke - ziehen 2 links, 1 oben über andere steine
 Kreise können diagonal über andere Steine ziehen:  	 O | + 		   | + 
 							---|---	  -->	---|---	

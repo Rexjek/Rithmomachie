@@ -10,12 +10,12 @@ illegale Züge (über andere Steine hinweg):
 generell:
 ---------
 
-Vierecke - ziehen über andere Steine
-weiße Dreiecke - ziehen über andere Steine
-		 außer Zug gerade nach unten
-		 außer Zug gerade nach links
-schwarze Dreiecke - ziehen 2 links, 1 oben über andere steine
-Kreise können diagonal über andere Steine ziehen:  	 O | + 		   | + 
+#Vierecke - ziehen über andere Steine 
+weiße Dreiecke - .ziehen über andere Steine
+		 .außer Zug gerade nach unten
+		 .außer Zug gerade nach links
+#schwarze Dreiecke - ziehen 2 links, 1 oben über andere steine
+.Kreise können diagonal über andere Steine ziehen:  	 O | + 		   | + 
 							---|---	  -->	---|---	
 							 + |   		 + | O 
 
@@ -24,27 +24,26 @@ Kreise können diagonal über andere Steine ziehen:  	 O | + 		   | +
 Schwarze Steine:
 ----------------
 
-0 14 - Viereck 	4 links 
-		1 rechts, 3 runter
-0 15 - Viereck	4 links
+#0 14 - Viereck 	4 links; 1 rechts, 3 runter
+#0 15 - Viereck	4 links
 		4 runter
-1 14 - Viereck	4 links
+#1 14 - Viereck	4 links
 		3 links, 1 hoch
 		1 rechts, 3 runter
-1 15 - Viereck	4 links
+#1 15 - Viereck	4 links
 		3 links, 1 hoch
-2 13 - Kreis	1 links, 1 hoch
-2 14 - Dreieck 	2 links, 1 hoch
-5 13 - Kreis 	1 links, 1 runter
-5 14 - Viereck	4 links
+.2 13 - Kreis	1 links, 1 hoch
+#2 14 - Dreieck 	2 links, 1 hoch
+.5 13 - Kreis 	1 links, 1 runter
+#5 14 - Viereck	4 links
 		3 links, 1 hoch
-		1 rechts, 3 hoch
-6 15 - Viereck	4 links
+		
+#6 15 - Viereck	4 links
 		3 links, 1 runter
-7 14 - Viereck	4 links
+#7 14 - Viereck	4 links
 		3 links, 1 hoch
 		1 rechts, 3 hoch
-7 15 - Viereck	4 links
+#7 15 - Viereck	4 links
 		3 links, 1 hoch
 		4 hoch
 				
@@ -52,24 +51,25 @@ Schwarze Steine:
 Weiße Steine:
 -------------
 
-0 0 - Viereck	4 runter
+#0 0 - Viereck	4 runter
 		3 rechts, 1 runter
-0 1 - Viereck	1 links, 3 runter
+#0 1 - Viereck	1 links, 3 runter
 		4 rechts
 		3 rechts, 1 runter
-1 0 - Viereck	1 hoch, 3 rechts
-1 1 - Viereck	1 links, 3 runter
+#1 0 - Viereck	1 hoch, 3 rechts
+#1 1 - Viereck	1 links, 3 runter
 		4 rechts
 		3 rechts, 1 hoch
 		3 rechts, 1 runter
-2 1 - Dreieck	3 rechts
+.2 1 - Dreieck	3 rechts
 		2 rechts, 1 hoch
-3 1 - Dreieck	3 rechts
-4 1 - Dreieck	3 rechts
-5 1 - Dreieck	3 rechts
+.3 1 - Dreieck	3 rechts
+.4 1 - Dreieck	3 rechts
+.5 1 - Dreieck	3 rechts
 		2 rechts, 1 runter
-5 2 - Kreis	1 rechts, 1 runter
+.5 2 - Kreis	1 rechts, 1 runter
 
+//Kreise keine festen Objekte ?!
 
 
 ****************

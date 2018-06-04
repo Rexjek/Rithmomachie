@@ -88,22 +88,23 @@ Weiße Steine:
 .4 1 - Dreieck	1 links, 2 hoch
 .5 1 - Dreieck	1 links, 2 hoch
 
-weiße Kreise: wenn weiter nach links bewegt als START-Position -> IndexOutOfRangeException
-weiße Dreiecke: nicht nach ganz links bewegbar, nicht immer nach links bewegbar
-weißes Viereck: wenn weiter nach links bewegt als START-Position -> IndexOutOfRangeException
-weiße Kreise: 1 und 2 Reihe von recht keine Bewegung nach Links mehr möglich,
-Reihe ganz recht auch keine Züge nach oben oder unten möglich
-
+.weiße Kreise: wenn weiter nach links bewegt als START-Position -> IndexOutOfRangeException
+.weiße Dreiecke: nicht nach ganz links bewegbar, nicht immer nach links bewegbar
+#weißes Viereck: wenn weiter nach links bewegt als START-Position -> IndexOutOfRangeException
+.weiße Kreise: 1 und 2 Reihe von rechts keine Bewegung nach Links mehr möglich,
+ Reihe ganz recht auch keine Züge nach oben oder unten möglich
++weiße Vierecke: 0.0, 7.0, 6.0, 1.0 können nicht 4 Schritte nach rechts bewegt werden
++wenn Weiße Kreise mehr links als Startposition: IndexOutOfRangeExeption
 ----------------
 Schwarze Steine: 
 ----------------
 
-schwarze Dreiecke können nicht nach ganz links laufen (z.B 5 1)
+.schwarze Dreiecke können nicht nach ganz links laufen (z.B 5 1)
 schwarze Rechtecke können nicht mehr bewegen, wenn sie in 2 oder 3 Reihe von links stehen
-schwarzer Kreis kann sich überhaupt nicht mehr bewegen sobald er 1 oder 2 Reihe von links steht -> IndexOutOfRangeException
-
+.schwarzer Kreis kann sich überhaupt nicht mehr bewegen sobald er 1 oder 2 Reihe von links steht -> IndexOutOfRangeException
++schwarze Dreiecke können in weiße Vierecke (Startposition) ziehen-> Weißes Viereck kann garnicht zeihen
 Steine in unterer linker Ecke können sich nicht mehr beewgen, Steine in oberer linker Ecke schon
-
++alle steine können in alle steine links, inclusive von reihe 4 ziehen
 
 
 

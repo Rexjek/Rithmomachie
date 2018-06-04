@@ -6,9 +6,9 @@ alles, was er/sie wissen muss. Üblicherweise sollte der Kommentar
 zumindest die folgenden Angaben umfassen:
 ------------------------------------------------------------------------
 
-PROJEKTBEZEICHNUNG:
-PROJEKTZWECK:
-VERSION oder DATUM:
-WIE IST DAS PROJEKT ZU STARTEN:
-AUTOR(EN):
-BENUTZERHINWEISE:
+PROJEKTBEZEICHNUNG: Reihenberechnung
+PROJEKTZWECK:Berechnung der Reihen
+VERSION oder DATUM: 1.0
+WIE IST DAS PROJEKT ZU STARTEN: Doppelklick
+AUTOR(EN): Patrick
+BENUTZERHINWEISE: Sehr kompliziert, nur für Rithmomachie zu gebrauchen

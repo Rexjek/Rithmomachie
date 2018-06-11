@@ -95,6 +95,9 @@ Weiße Steine:
  Reihe ganz recht auch keine Züge nach oben oder unten möglich
 +weiße Vierecke: 0.0, 7.0, 6.0, 1.0 können nicht 4 Schritte nach rechts bewegt werden
 +wenn Weiße Kreise mehr links als Startposition: IndexOutOfRangeExeption
++Dreiecke können durch alle kreise ziehen
++ viereck von pos 2.9 keine bewegung auf 0.11 und 0.7 möglich
+
 ----------------
 Schwarze Steine: 
 ----------------
@@ -105,7 +108,8 @@ schwarze Rechtecke können nicht mehr bewegen, wenn sie in 2 oder 3 Reihe von li
 +schwarze Dreiecke können in weiße Vierecke (Startposition) ziehen-> Weißes Viereck kann garnicht zeihen
 Steine in unterer linker Ecke können sich nicht mehr beewgen, Steine in oberer linker Ecke schon
 +alle steine können in alle steine links, inclusive von reihe 4 ziehen
-
++dreiecke können nicht 2 links 1 hoch
++
 
 
 

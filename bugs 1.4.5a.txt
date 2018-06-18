@@ -113,6 +113,7 @@ Steine in unterer linker Ecke können sich nicht mehr beewgen, Steine in oberer 
 +Dreiecke können nicht 2 links 1 hoch
 +Dreiecke können nicht 2 links 1 runter
 +Kreise können aus ihrer Startposition heraus Steine diagonal überspringen
++Vierecke können nicht 2 hoch 2 links bzw 2 hoch 2 rechts, wenn sie zu nah am oberen Rand sind. Beim unteren Rand sind keine Probleme
 
 
 

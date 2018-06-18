@@ -97,6 +97,7 @@ Weiße Steine:
 +wenn Weiße Kreise mehr links als Startposition: IndexOutOfRangeExeption
 +Dreiecke können durch alle kreise ziehen
 + viereck von pos 2.9 keine bewegung auf 0.11 und 0.7 möglich
++Kreise können aus ihrer Startposition heraus Steine diagonal überspringen
 
 ----------------
 Schwarze Steine: 
@@ -109,8 +110,8 @@ schwarze Rechtecke können nicht mehr bewegen, wenn sie in 2 oder 3 Reihe von li
 Steine in unterer linker Ecke können sich nicht mehr beewgen, Steine in oberer linker Ecke schon
 +alle steine können in alle steine links, inclusive von reihe 4 ziehen
 +dreiecke können nicht 2 links 1 hoch
-+
-
++dreiecke können nicht 2 links 1 runter
++Kreise können aus ihrer Startposition heraus Steine diagonal überspringen
 
 
 

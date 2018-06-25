@@ -10,66 +10,19 @@ illegale Züge (über andere Steine hinweg):
 generell:
 ---------
 
-#Vierecke - ziehen über andere Steine 
-weiße Dreiecke - .ziehen über andere Steine
-		 .außer Zug gerade nach unten
-		 .außer Zug gerade nach links
-#schwarze Dreiecke - ziehen 2 links, 1 oben über andere steine
-.Kreise können diagonal über andere Steine ziehen:  	 O | + 		   | + 
-							---|---	  -->	---|---	
-							 + |   		 + | O 
 
 
 ----------------
 Schwarze Steine:
 ----------------
 
-#0 14 - Viereck 	4 links; 1 rechts, 3 runter
-#0 15 - Viereck	4 links
-		4 runter
-#1 14 - Viereck	4 links
-		3 links, 1 hoch
-		1 rechts, 3 runter
-#1 15 - Viereck	4 links
-		3 links, 1 hoch
-.2 13 - Kreis	1 links, 1 hoch
-#2 14 - Dreieck 	2 links, 1 hoch
-.5 13 - Kreis 	1 links, 1 runter
-#5 14 - Viereck	4 links
-		3 links, 1 hoch
-		
-#6 15 - Viereck	4 links
-		3 links, 1 runter
-#7 14 - Viereck	4 links
-		3 links, 1 hoch
-		1 rechts, 3 hoch
-#7 15 - Viereck	4 links
-		3 links, 1 hoch
-		4 hoch
+
 				
 -------------				
 Weiße Steine:
 -------------
 
-#0 0 - Viereck	4 runter
-		3 rechts, 1 runter
-#0 1 - Viereck	1 links, 3 runter
-		4 rechts
-		3 rechts, 1 runter
-#1 0 - Viereck	1 hoch, 3 rechts
-#1 1 - Viereck	1 links, 3 runter
-		4 rechts
-		3 rechts, 1 hoch
-		3 rechts, 1 runter
-.2 1 - Dreieck	3 rechts
-		2 rechts, 1 hoch
-.3 1 - Dreieck	3 rechts
-.4 1 - Dreieck	3 rechts
-.5 1 - Dreieck	3 rechts
-		2 rechts, 1 runter
-.5 2 - Kreis	1 rechts, 1 runter
 
-//Kreise keine festen Objekte ?!
 
 
 ****************
@@ -80,40 +33,11 @@ fehlender Zug:
 Weiße Steine:
 -------------
 
-.1 0 - Viereck 	kann nicht nach rechts ziehen
-.0 0 - Viereck 	kann nicht nach rechts ziehen
 
-.2 1 - Dreieck	1 links, 2 runter
-.3 1 - Dreieck	1 links, 2 runter
-.4 1 - Dreieck	1 links, 2 hoch
-.5 1 - Dreieck	1 links, 2 hoch
-
-.Kreise: wenn weiter nach links bewegt als START-Position -> IndexOutOfRangeException
-.Dreiecke: nicht nach ganz links bewegbar, nicht immer nach links bewegbar
-#Viereck: wenn weiter nach links bewegt als START-Position -> IndexOutOfRangeException
-.Kreise: 1 und 2 Reihe von rechts keine Bewegung nach Links mehr möglich,
- Reihe ganz recht auch keine Züge nach oben oder unten möglich
-+Vierecke: 0.0, 7.0, 6.0, 1.0 können nicht 4 Schritte nach rechts bewegt werden
-+wenn Kreise mehr links als Startposition: IndexOutOfRangeExeption
-+Dreiecke können durch alle kreise ziehen
-+ viereck von pos 2.9 keine bewegung auf 0.11 und 0.7 möglich
-+Kreise können aus ihrer Startposition heraus Steine diagonal überspringen
-+Dreiecke können durch scharze Dreiecke ziehen
 
 ----------------
 Schwarze Steine: 
 ----------------
-
-.Dreiecke können nicht nach ganz links laufen (z.B 5 1)
- Rechtecke können nicht mehr bewegen, wenn sie in 2 oder 3 Reihe von links stehen
-.Kreis kann sich überhaupt nicht mehr bewegen sobald er 1 oder 2 Reihe von links steht -> IndexOutOfRangeException
-+Dreiecke können in weiße Vierecke (Startposition) ziehen-> Weißes Viereck kann garnicht zeihen
-Steine in unterer linker Ecke können sich nicht mehr beewgen, Steine in oberer linker Ecke schon
-+alle steine können in alle steine links, inclusive von reihe 4 ziehen
-+Dreiecke können nicht 2 links 1 hoch
-+Dreiecke können nicht 2 links 1 runter
-+Kreise können aus ihrer Startposition heraus Steine diagonal überspringen
-+Vierecke können nicht 2 hoch 2 links bzw 2 hoch 2 rechts, wenn sie zu nah am oberen Rand sind. Beim unteren Rand sind keine Probleme
 
 
 
@@ -128,7 +52,4 @@ Fehlermeldungen:
 Weiße Steine:
 -------------
 
-6 0 - Viereck IndexOutOfRangeException
-6 1 - Viereck IndexOutOfRangeException
-7 0 - Viereck IndexOutOfRangeException
-7 1 - Viereck IndexOutOfRangeException
+

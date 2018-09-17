@@ -1,2 +1,20 @@
 Analyse des Spieles Rhythmomachia-The Philosopher´s Game
 
+Eine Randleiste mit Spielsteinen pro farblich markierte Gruppe.
+Die generelle Farbgebung des Programms ändert sich abhängig davon,
+wer momentan am Zug ist, d.h es wechselt zwischen Pink und Lila.
+Steine können nicht bewegt werden, Felder für Angriffsauswahl existieren jedoch.
+Felder unterteilen sich in Rechenmethoden, Multiplizieren und Dividieren, 
+Zerstören und Aufbauen, und Angriff Abblasen sowie Runde beenden.
+Ein Menü für Einstellungen existiert auch Optionen sind hier Angriff statt Ziehen, Angriffe nach Ziehen, 
+Einfangen, direkte Konfrontation, Umzingelt und Runde,
+die Farbe der jeweiligen gruppierten Spielsteine sind auch veränderbar.
+Kreise kann man ziehen indem man lange drauf drückt und dann zieht. 
+Alle anderen Steinarten sind nicht bewegbar.
+
+Schlagen der Dreiecke durch Kreise ist möglich, 
+es besteht die Auswahl zwischen den vorhin genannten Zerstören und Angreifen. 
+Solange "Zerstören" in der Leiste ausgewählt ist,
+wird der Wert des angegriffenen Steines um den Wert des angreifenden Kreises erniedrigt.
+Ist jedoch "Aufbauen" ausgewählt, wird der Wert des angegriffenen Steines verdoppelt,
+dazu wird noch der jeweilige Wert des angreifenden Kreises addiert.

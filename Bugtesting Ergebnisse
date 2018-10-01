@@ -1,5 +1,5 @@
 +++++++++++++++++++++++++
-Bugs Rithmomachie 1.4.6:
+Bugs Rithmomachie 1.4.7:
 +++++++++++++++++++++++++
 
 ******************************************
@@ -9,13 +9,14 @@ illegale Züge (über andere Steine hinweg):
 ---------
 generell:
 ---------
-
-
+-Weißer Kreis 2 ist schwarz
+-Weißer Kreis 8 ist ohne Zahl
 
 ----------------
 Schwarze Steine:
 ----------------
-
+-wenn Schwarzes Dreieck 12 auf 0 11 zieht, können alle Steine bis auf den Weißen Kreis ohne Zahl sich nicht mehr bewegen,
+ danach gelten plötzliche alle Weißen Steine als Schwarze Steine.
 
 				
 -------------				

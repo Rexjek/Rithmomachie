@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>104</x>
+      <y>552</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Circle
+--
+Player c,c2
+bool[,] r = new bool[10, 18];
+--
+public override bool[,] PossibleMove()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>160</x>
+      <y>40</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>EdgeSelection
+
+--
+public static EdgeSelection Instance { set; get; }
+public GameObject SelectionPrefab;
+private List&lt;GameObject&gt; Selection;
+
+--
+private void Start()
+private GameObject SelectedObject() 
+public void SelectionOfAllowedMove(bool[,] moves)
+public void HideSelection()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>408</x>
+      <y>40</y>
+      <w>168</w>
+      <h>376</h>
+    </coordinates>
+    <panel_attributes>Game
+--
+public static Game Instance { set; get; }
+private bool [,] allowedMoves { set; get; }
+public Player[,] Playerx { set; get; }
+public  Player selectedPlayer;
+public List&lt;GameObject&gt; Test2 ;
+private const float tileSize = 1.0f;
+private const float tileDiameter = 0.5f;
+private int selectionX = -1;
+private int selectionY = -1;
+public List&lt;GameObject&gt; tokens1;
+private List&lt;GameObject&gt; activeTokens;
+public List&lt;int&gt; Zahl;
+private Quaternion orientation = Quaternion.Euler(-90, 0, 180);
+private Quaternion orientation2 = Quaternion.Euler(-90, 0, 0);
+public bool isWhiteTurn = true;
+private PlayingField MeinFeld = new PlayingField();
+--
+private void Start()
+private void SpawnAll()
+private Vector3 Middle(int x, int z)
+public void mouseSelection()
+public void Update()
+private void SelectPlayer (int x, int y)
+private void movePlayer(int x,int y)
+private void UpdateSelection()
+public void Board()
+public void SpawnToken(int index,int x, int y, int zahl)
+public void SpawnToken2(int index, int x, int y, int zahl)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>160</x>
+      <y>208</y>
+      <w>216</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Player
+
+--
+public int CurrentX { set; get; }
+public int CurrentY { set; get; }
+public bool isWhite; 
+--
+public void SetPosition(int x,int y)
+public virtual bool[,] PossibleMove()
+void OnMouseOver()
+void OnMouseExit()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>720</x>
+      <y>40</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>PlayingField
+
+--
+private Stone[ , ] Feld;
+--
+public PlayingField()
+public void addStone(int x, int z, bool Farbe, int Wert, int F)
+void Start ()
+void Update ()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>552</x>
+      <y>552</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Square
+
+
+--
+Player c, c2, c3, c4;
+bool[,] r = new bool[10, 18];
+--
+public override bool[,] PossibleMove()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>720</x>
+      <y>336</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Stone
+
+--
+private int MyForm;
+private bool Color;
+private int Value;
+private int x;
+private int z;
+--
+public Stone(int xIn, int zIn, bool ColorIn, int ValueIn, int F)
+void Start ()
+void Update ()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>328</x>
+      <y>552</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Triangle
+
+--
+Player c, c2, c3;
+bool[,] r = new bool[10, 18];
+--
+public override bool[,] PossibleMove()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>776</x>
+      <y>168</y>
+      <w>40</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;168;24;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>552</x>
+      <y>96</y>
+      <w>184</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>168;24;24;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>352</x>
+      <y>248</y>
+      <w>72</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;56;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>168</x>
+      <y>464</y>
+      <w>656</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;88;640;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>616</x>
+      <y>464</y>
+      <w>208</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;88;192;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>384</x>
+      <y>464</y>
+      <w>440</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;88;424;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>304</x>
+      <y>96</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;104;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>240</x>
+      <y>304</y>
+      <w>184</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+m1=3
+m2=1
+</panel_attributes>
+    <additional_attributes>24;24;168;248</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>168</x>
+      <y>304</y>
+      <w>112</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+m1=2
+m2=1
+</panel_attributes>
+    <additional_attributes>96;24;24;248</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>240</x>
+      <y>304</y>
+      <w>408</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+m1=4
+m2=1
+</panel_attributes>
+    <additional_attributes>24;24;392;248</additional_attributes>
+  </element>
+</diagram>

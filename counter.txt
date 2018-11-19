@@ -1,0 +1,47 @@
+public class Counter{
+GameObject gezogenerStein;
+private byte anzahl;
+private short y0;
+private short y1;
+private short y2;
+private short y3;
+private short y4;
+private short y5;
+private short y6;
+private short y7;
+
+public void count(GameObject gezogenerSteinUebergeben){
+	gezogenerStein=gezogenerSteinUebergeben;
+	anzahl=0;
+	for(int i=0; i<=7; i++;){
+		if(Game.instance.Player[x,i]!=null && Game.instance.Player[x,i].isWhite==gezogenerStein){
+			anzahl++;
+			switch(i){
+				case 0:
+					y0 = Game.instance.Player[x,0].getWert;
+					break;
+				case 1:
+					y1 = Game.instance.Player[x,1].getWert;
+					break;
+				case 2:
+					y2 = Game.instance.Player[x,2].getWert;
+					break;
+				case 3:
+					y3 = Game.instance.Player[x,3].getWert;
+					break;
+				case 4:
+					y4 = Game.instance.Player[x,4].getWert;
+					break;
+				case 5:
+					y5 = Game.instance.Player[x,5].getWert;
+					break;
+				case 6:
+					y6 = Game.instance.Player[x,6].getWert;
+					break;
+				case 7:
+					y7 = Game.instance.Player[x,7].getWert;
+					break;
+		}
+	}
+}
+}

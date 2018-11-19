@@ -1,0 +1,108 @@
+	GameObject opferStein;
+	GameObject angeklickterStein;
+	bool wahr = false;
+
+public void Ueberfall(GameObject angeklickterSteinUebergeben){
+	angeklickterStein = angeklickterSteinUebergeben;
+	for(int i = 1; opferStein != null && Game.instance.Player.x >= 0; i++){
+		if(Game.instance.Player[x-i,y]!=null){
+			if(Game.instance.Player[x-i,y].isWhite!=angeklickterStein){
+				opferStein = Game.instance.Player[x-i,y];
+				Wert = opferStein.getWert;
+				wahr = true;
+				pruefen(i, angeklickterStein.Wert, Wert, "links")
+			}
+		}
+	}
+	opferStein = null;
+	for(int i = 1; opferStein != null && Game.instance.Player.x < 16; i++){
+		if(Game.instance.Player[x+i,y]!=null){
+			if(Game.instance.Player[x+i,y].isWhite!=angeklickterStein){
+				opferStein = Game.instance.Player[x+i,y];
+				Wert = opferStein.getWert;
+				wahr = true;
+				pruefen(i, angeklickterStein.Wert, Wert, "rechts")
+			}
+		}
+	}
+	opferStein = null;
+	for(int i = 1; opferStein != null && Game.instance.Player.y + i >= 0; i++){
+		if(Game.instance.Player[x,y-i]!=null){
+			if(Game.instance.Player[x,y-i].isWhite!=angeklickterStein){
+				opferStein = Game.instance.Player[x,y-i];
+				Wert = opferStein.getWert;
+				wahr = true;
+				pruefen(i, angeklickterStein.Wert, Wert, "oben")
+			}
+		}
+	}
+	opferStein = null;
+	for(int i = 1; opferStein != null && Game.instance.Player.y + i < 8; i++){
+		if(Game.instance.Player[x,y+i]!=null){
+			if(Game.instance.Player[x,y+i].isWhite!=angeklickterStein){
+				opferStein = Game.instance.Player[x,y+i];
+				Wert = opferStein.getWert;
+				wahr = true;
+				pruefen(i, angeklickterStein.Wert, Wert, "unten")
+			}	
+		}
+	}
+}
+
+public boolean compareAdd(int Abstand, int Wert1, int Wert2){
+
+	if(Wert1 + Abstand == Wert2){
+		return true;
+	} else {
+		return false;
+		}
+}
+
+public boolean compareMul(int Abstand, int Wert1, int Wert2){
+
+	if(Abstand*Wert1 == Wert2){
+		return true;
+	} else {
+		return false;
+		}
+}
+
+public boolean compareSub(int Abstand, int Wert1, int Wert2){
+
+	
+		if(Wert1 - Abstand == Wert2){
+			return true;
+		} else {
+			return false;
+		}	
+	}
+}
+
+public boolean compareDiv(int Abstand,int Wert1, int Wert2){
+
+		if(Wert1 / Abstand == Wert2){
+			return true;
+		} else {
+			return false;
+		}
+	}
+}
+
+public void pruefen(int Abstand, int Wert1, int Wert2, String Richtung){
+		
+		if(compareDiv(Abstand, Wert1, Wert2)==true||compareMul(Abstand, Wert1, Wert2)==true||compareSub(Abstand, Wert1, Wert2)==true||compareAdd(Abstand, Wert1, Wert2)==true){
+			
+			if(Richtung == "links"){
+				//Ein Überfall nach links mit "Abstand" Feldern Abstand ist möglich
+			} else if(Richtung == "rechts"){
+				//Ein Überfall nach rechts mit "Abstand" Feldern Abstand ist möglich
+			} else if(Richtung == "oben"){
+				//Ein Überfall nach oben mit "Abstand" Feldern Abstand ist möglich
+			} else if(Richtung == "unten"){
+				//Ein Überfall nach unten mit "Abstand" Feldern Abstand ist möglich
+			}
+			
+			
+		}
+		
+}

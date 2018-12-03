@@ -1,0 +1,177 @@
+	int oben;
+	int unten;
+	int rechts;
+	int links;
+	
+	int count = 0;
+	
+	GameObject opferStein;
+	GameObject gezogenerStein;
+	
+	int Wert;
+	
+	//hier wird getestet, ob links des Players ein Opferstein liegt und wo dieser liegt. Daraufhin 
+public void startmethode(GameObject gezogenerSteinUebergeben){
+	gezogenerStein = gezogenerSteinUebergeben;
+	//x-1
+	if(Game.instance.Player[x-1,y]!=null){ //prüft ob links ein Stein ist
+		if(Game.instance.Player[x-1,y].isWhite!=gezogenerStein){ //-> im gegnerischen Team?
+			opferStein = Game.instance.Player[x-1,y]; //-> speichern als Opferstein
+			Wert = opferStein.getWert; //-> speichern des Werts in Variable
+			zugPruefen();
+		}	
+	}
+	//x+1
+	if(Game.instance.Player[x+1,y]!=null){
+		if(Game.instance.Player[x+1,y].isWhite!=gezogenerStein){
+			opferStein = Game.instance.Player[x+1,y];
+			Wert = opferStein.getWert;
+			zugPruefen();
+		}	
+	}
+	//y+1
+	if(Game.instance.Player[x,y+1]!=null){
+		if(Game.instance.Player[x,y+1].isWhite!=gezogenerStein){
+			opferStein = Game.instance.Player[x,y+1];
+			Wert = opferStein.getWert;
+			zugPruefen();
+		}	
+	}
+	//y-1
+	if(Game.instance.Player[x,y-1]!=null){
+		if(Game.instance.Player[x,y-1].isWhite!=gezogenerStein){
+			opferStein = Game.instance.Player[x,y-1];
+			Wert = opferStein.getWert;
+			zugPruefen();
+		}	
+	}
+}
+
+public void zugPruefen(){ //prüft umkreis von opferstein -> zählt steine
+	if(Game.instance.Player[opferStein.getX-1,opferStein.getY]!=null){
+		if(Game.instance.Player[opferStein.getX-1,opferStein.getY].isWhite!=opferStein.isWhite){
+			links=Game.instance.Player[opferStein.getX-1,opferStein.getY].getWert;
+			count++;
+		}
+	}
+	if(Game.instance.Player[opferStein.getX+1,opferStein.getY]!=null){
+		if(Game.instance.Player[opferStein.getX+1,opferStein.getY].isWhite!=opferStein.isWhite){
+			rechts=Game.instance.Player[opferStein.getX+1,opferStein.getY].getWert;
+			count++;
+		}
+	}
+	if(Game.instance.Player[opferStein.getX,opferStein.getY-1]!=null){
+		if(Game.instance.Player[opferStein.getX,opferStein.getY-1].isWhite!=opferStein.isWhite){
+			oben=Game.instance.Player[opferStein.getX,opferStein.getY-1].getWert;
+			count++;
+		}
+	}
+	if(Game.instance.Player[opferStein.getX,opferStein.getY+1]!=null){
+		if(Game.instance.Player[opferStein.getX,opferStein.getY+1].isWhite!=opferStein.isWhite){
+			unten=[opferStein.getX,opferStein.getY+1].getWert;
+			count++;
+		}
+	}
+	if(count==2){ // -> 2 Steine in Umkreis
+		if(links!=null){
+			schlagen(gezogenerStein.Wert,links,Wert);
+		}
+		if(rechts!=null){
+			schlagen(gezogenerStein.Wert,rechts,Wert);
+		}
+		if(oben!=null){
+			schlagen(gezogenerStein.Wert,oben,Wert);
+		}
+		if(unten!=null){
+			schlagen(gezogenerStein.Wert,unten,Wert);
+		}
+	} else if(count == 3){ // -> 3 Steine in Umkreis
+		if(links!=null){
+			if(rechts!=null){
+				schlagen(links,rechts,Wert);
+			}
+			if(oben!=null){
+				schlagen(links,oben,Wert);
+			}
+			if(unten!=null){
+				schlagen(links,unten,Wert);
+			}
+		}
+		if(rechts!=null){
+			if(oben!=null){
+				schlagen(rechts,oben,Wert);
+			}
+			if(unten!=null){
+				schlagen(rechts,unten,Wert);
+			}
+		}
+		if(oben!=null){
+			if(unten!=null){
+				schlagen(oben,unten,Wert);
+			}
+		}
+	} else if(count==4){ // -> 4 Steine in Umkreis
+		opferStein.entfernen(); //DER OPFERSTEIN IST GECSHLAGEN, WENN DER CODE DIESEN PUNKT ERREICHT!!!
+	}
+}
+
+// Die folgenden 4 Methoden testen, ob das Opfer geschlagen werden kann
+public boolean compareAdd(int gegner1, int gegner2, int opfer){ // -> Addition
+
+	if(gegner1+gegner2==opfer){
+		return true;
+	} else {
+		return false;
+		}
+}
+
+public boolean compareMul(int gegner1, int gegner2, int opfer){ // -> Multiplikation
+
+	if(gegner1*gegner2==opfer){
+		return true;
+	} else {
+		return false;
+		}
+}
+
+public boolean compareSub(int gegner1, int gegner2, int opfer){	// -> Subtraktion
+    
+	if(gegner1 > gegner2) {
+		if(gegner1 - gegner2 == opfer){
+			return true;
+		} else {
+			return false;
+		}
+	} else {
+		if(gegner2 - gegner1 == opfer){
+			return true;
+		} else {
+			return false;
+		}
+	}
+}
+
+public boolean compareDiv(int gegner1,int gegner2, int opfer){ // -> Division
+
+	if(gegner1 < gegner2){
+		if(gegner2/gegner1==opfer){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}else{
+		if(gegner1/gegner2==opfer){
+			return true;
+		}else{
+			return false;
+		}
+	}
+}
+
+// Diese Methode schlägt das Opfer, wenn es möglich ist
+public void schlagen(int gegner1,int gegner2, int opfer){
+	if(compareDiv(gegner1, gegner2, opfer)==true||compareMul(gegner1, gegner2, opfer)==true||compareSub(gegner1, gegner2, opfer)==true||compareAdd(gegner1, gegner2, opfer)==true){
+		opferStein.entfernen(); //DER OPFERSTEIN IST GECSHLAGEN, WENN DER CODE DIESEN PUNKT ERREICHT!!!
+	}
+}

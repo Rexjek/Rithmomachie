@@ -1,0 +1,36 @@
+GameObject gewaehlterStein;
+
+public bool reihenmethode(GameObject gewaehlterSteinUebergeben){
+	
+	gewaehlterStein = gewaehlterSteinUebergeben;
+	
+	//Ermitteln, ob sich Gegnersteine in der Reihe befinden
+	for(int i=-7; i<8; i++){
+		if (Game.instance.Player[x,y+i].isWhite!=gewaehlterStein){
+			return false;
+		}else{
+			return true;
+		}
+	}
+}
+
+
+a = stein1.getWert;
+b = stein2.getWert;
+c = stein2.getWert;
+
+//arithmetisches Mittel
+
+public bool spielBeenden(){
+	
+	if((a+c)/2=b)
+	{
+		return true;
+	}else if((a/b)=(b/c)){
+		return true;
+	}else if((a/c)=(b-a)/(c-b)){
+		return true;
+	}else{
+		return false;
+	}	
+}
